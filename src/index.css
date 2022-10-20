@@ -12,12 +12,12 @@ code {
     monospace;
 }
 
-.card:hover{
+.card:hover {
   background-color: white;
   opacity: 0.7;
-  
-  }
-  
+
+}
+
 
 
 
@@ -27,23 +27,23 @@ code {
   animation-duration: 5s;
 }
 
-.animation{
+.animation {
   margin-top: 250px;
 }
 
-.navbarTitle{
+.navbarTitle {
   color: #400E03;
 }
-.navbarTitle:hover{
+
+.navbarTitle:hover {
   color: #a54c38;
 }
 
-.f16{
-  font-size: 1.5vw;
+.f16 {
+  font-size: 2vw;
 }
 
-.my{
+.my {
   margin-top: 2vw;
   margin-bottom: 2vw;
-
 }

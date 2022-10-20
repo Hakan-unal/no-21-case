@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 const App = () => {
     const [test, setTest] = useState(1)
@@ -32,74 +33,76 @@ const App = () => {
     }, [test])
 
     return (
-        <>
+        <div style={{ overflow: "hidden" }}>
             <div>
                 <img style={{ width: width }} alt="home" src={home}></img>
             </div>
-            <div className='navbarTitle f16 my'>
+            <div className='navbarTitle f16 my font-weight-bold'>
                 Featured Products
             </div>
-            <div>
-                <Row>
-                    <Col xs={3}>
-                        <Card >
-                            <Card.Body>
-                                <Card.Title className='navbarTitle'>Card Title</Card.Title>
-                                <Card.Subtitle className="mb-2 navbarTitle">Card Subtitle</Card.Subtitle>
-                                <Card.Text className='navbarTitle'>
-                                    City life is changing. So are the habits of urban citizens. 4X4 cars that were previously used only on challenging lands are now preferred for urban use.
-                                </Card.Text>
-                                <Card.Link>
-                                    <Button>Learn More</Button>
-                                </Card.Link>
-                                <Card.Link>
-                                    <Button>Find a Dealer</Button>
-                                </Card.Link>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+            <Row>
+                <Col md={{ order: 1 }}>test</Col>
+                <Col md={{ order: 2 }}>
+                    <Card >
+                        <Card.Body>
+                            <Card.Title className='navbarTitle text-left  font-weight-bold'>ICEWAYS</Card.Title>
+                            <Card.Text className='navbarTitle text-left h6'>
+                                City life is changing. So are the habits of urban citizens. 4X4 cars that were previously used only on challenging lands are now preferred for urban use.
+                            </Card.Text>
+                            <Card.Link>
+                                <ButtonGroup aria-label="Basic example">
+                                    <Button className='mr-2' size='sm'>Learn More</Button>
+                                    <Button className='bg-danger border-0' size='sm'>Find a Dealer</Button>
+                                </ButtonGroup>
 
-                    <Col xs={3}>
+                            </Card.Link>
+                        </Card.Body>
+                    </Card>
+                </Col>
 
-                        <Card >
-                            <Card.Body>
-                                <Card.Title className='navbarTitle'>Card Title</Card.Title>
-                                <Card.Subtitle className="mb-2 navbarTitle">Card Subtitle</Card.Subtitle>
-                                <Card.Text className='navbarTitle'>
-                                    City life is changing. So are the habits of urban citizens. 4X4 cars that were previously used only on challenging lands are now preferred for urban use.
-                                </Card.Text>
-                                <Card.Link>
-                                    <Button>Learn More</Button>
-                                </Card.Link>
-                                <Card.Link>
-                                    <Button>Find a Dealer</Button>
-                                </Card.Link>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                <Col md={{ order: 3 }}>
 
-                    <Col xs={3}>
+                    <Card >
+                        <Card.Body>
+                            <Card.Title className='navbarTitle text-left font-weight-bold'>DRIVEWAYS SPORT</Card.Title>
+                            <Card.Text className='navbarTitle text-left h6'>
+                                City life is changing. So are the habits of urban citizens. 4X4 cars that were previously used only on challenging lands are now preferred for urban use.
+                            </Card.Text>
+                            <Card.Link>
+                                <ButtonGroup aria-label="Basic example">
+                                    <Button className='mr-2' size='sm'>Learn More</Button>
+                                    <Button className='bg-danger border-0' size='sm'>Find a Dealer</Button>
+                                </ButtonGroup>
 
-                        <Card >
-                            <Card.Body>
-                                <Card.Title className='navbarTitle'>Card Title</Card.Title>
-                                <Card.Subtitle className="mb-2 navbarTitle">Card Subtitle</Card.Subtitle>
-                                <Card.Text className='navbarTitle'>
-                                    City life is changing. So are the habits of urban citizens. 4X4 cars that were previously used only on challenging lands are now preferred for urban use.
-                                </Card.Text>
-                                <Card.Link>
-                                    <Button>Learn More</Button>
-                                </Card.Link>
-                                <Card.Link>
-                                    <Button>Find a Dealer</Button>
-                                </Card.Link>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+                            </Card.Link>
+                        </Card.Body>
+                    </Card>
+                </Col>
 
-                </Row>
-            </div>
-        </>
+                <Col md={{ order: 4 }}>
+
+                    <Card >
+                        <Card.Body>
+                            <Card.Title className='navbarTitle text-left  font-weight-bold'>DRIVEWAYS COMPETUS H/P</Card.Title>
+                            <Card.Text className='navbarTitle text-left h6'>
+                                City life is changing. So are the habits of urban citizens. 4X4 cars that were previously used only on challenging lands are now preferred for urban use.
+                            </Card.Text>
+                            <Card.Link>
+                                <ButtonGroup aria-label="Basic example">
+                                    <Button className='mr-2' size='sm'>Learn More</Button>
+                                    <Button className='bg-danger border-0' size='sm'>Find a Dealer</Button>
+                                </ButtonGroup>
+
+                            </Card.Link>
+
+                        </Card.Body>
+                    </Card>
+                </Col>
+
+                <Col md={{ order: 5 }}>test</Col>
+
+            </Row>
+        </div>
     );
 
 }
