@@ -111,7 +111,7 @@ const App = () => {
     }, []);
 
     const cards = datas.map((data) => {
-        return (<Col xs={{ span: 20, offset: 1 }} md={{ span: 6, offset: 1 }}>
+        return (<Col xs={{ span: 20, offset: 2 }} md={{ span: 6, offset: 1 }}>
             <Card >
                 <Card.Body>
                     <Card.Title className='navbarTitle text-left  font-weight-bold'>{data.title}</Card.Title>
