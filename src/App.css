@@ -32,7 +32,22 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: red !important;
+}
+
+.ant-radio-checked .ant-radio-inner:after {
+  background-color: red !important;
+  ;
+}
+
+.ant-radio:hover .ant-radio-inner {
+  border-color: red !important;
+  ;
 }
